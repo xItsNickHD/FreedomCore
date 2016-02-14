@@ -1,0 +1,12 @@
+# FreedomHostingMod's Main Configuration
+# Created by AvalancheYT and TaahThePhoenix
+
+server:
+    # Your server name?
+    name: FreedomHostingMod
+    
+    # Forum (Ban appeal, admin application and others)
+    forum: http://example.net/forum
+    
+    # Server list MOTD (Use & for color)
+    motd: "&e&k::: &b&lFreedomHostingMod Example &e&l:::"
