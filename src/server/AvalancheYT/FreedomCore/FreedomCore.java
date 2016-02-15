@@ -6,9 +6,6 @@ import server.AvalancheYT.FreedomCore.Commands.Command_admin;
 import server.AvalancheYT.FreedomCore.Commands.Command_fc;
 import server.AvalancheYT.FreedomCore.Commands.Command_list;
 import server.AvalancheYT.FreedomCore.Commands.Command_op;
-import server.AvalanceYT.FreedomCore.Commands.Command_fc;
-import server.AvalanceYT.FreedomCore.Commands.Command_list;
-import server.AvalanceYT.FreedomCore.Commands.Command_op;
 import server.AvalancheYT.FreedomCore.Config.ConfigManager;
 
 public class FreedomCore extends JavaPlugin {
