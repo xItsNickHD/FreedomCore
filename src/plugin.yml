@@ -13,7 +13,14 @@ commands:
         usage: /<command> [-a]
     admin:
         description: add/delete players to/from admin list
+<<<<<<< HEAD
         usage: /<command> [list] <add | delete <player>>
     op:
         description: ops a player
         usage: /<command> <player>
+=======
+        usage: /<command> <add | delete> <player>
+    op:
+        description: OP a player
+        usage: /<command> <player>
+>>>>>>> origin/master
