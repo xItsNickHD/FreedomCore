@@ -9,4 +9,4 @@ server:
     forum: http://example.net/forum
     
     # Server list MOTD (Use & for color)
-    motd: "&e&k::: &b&lFreedomHostingMod Example &e&l:::"
+    motd: "&e&k::: &b&lFreedomCore Example &e&l:::"

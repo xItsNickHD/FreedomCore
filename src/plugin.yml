@@ -1,4 +1,4 @@
-name: FreedomHostingMod
+name: FreedomCore
 version: 1.0
 description: A new custom mod for ChickenFreedom
 authors: [AvalancheYT, TaahThePhoenix]
@@ -13,4 +13,7 @@ commands:
         usage: /<command> [-a]
     admin:
         description: add/delete players to/from admin list
-        usage: /<command> <add | delete> <player>
+        usage: /<command> [list] <add | delete <player>>
+    op:
+        description: ops a player
+        usage: /<command> <player>

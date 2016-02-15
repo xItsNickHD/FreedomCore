@@ -1,4 +1,4 @@
-package server.AvalanceYT.FreedomCore.Commands;
+package server.AvalancheYT.FreedomCore.Commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -27,7 +27,7 @@ public class Command_fc implements CommandExecutor {
             return true;
         }
         
-        sender.sendMessage(ChatColor.DARK_RED + "===== FreedomHostingMod =====");
+        sender.sendMessage(ChatColor.DARK_RED + "===== FreedomCore =====");
         sender.sendMessage(ChatColor.GREEN + "Running on: " + ConfigManager.getMConfig().getConfig().getString("server.name"));
         sender.sendMessage(ChatColor.GREEN + "Forum: " + ConfigManager.getMConfig().getConfig().getString("server.forum"));
         sender.sendMessage(ChatColor.GOLD + "Created by AvalancheYT and TaahThePhoenix");

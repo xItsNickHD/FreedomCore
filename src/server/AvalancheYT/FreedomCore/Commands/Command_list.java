@@ -1,4 +1,4 @@
-package server.AvalanceYT.FreedomCore.Commands;
+package server.AvalancheYT.FreedomCore.Commands;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +43,7 @@ public class Command_list implements CommandExecutor {
         
         final List<String> names = new ArrayList<>();
         for (Player player : Bukkit.getOnlinePlayers()) {
-            if (filter == Filter.ADMIN && !RankManager.isSuperAdmin(player)) {
+            if (filter == Filter.ADMIN && !RankManager.isAdmin(player)) {
                 continue;
             }
             

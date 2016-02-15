@@ -27,19 +27,24 @@ public class RankManager {
         }
     }
     
-    public static boolean isSuperAdmin(CommandSender sender) {
+    public static boolean isAdmin(CommandSender sender) {
         Player player = (Player) sender;
         return ConfigManager.getAdmin().getConfig().contains(player.getUniqueId().toString());
     }
     
+    public static boolean isSuperAdmin(CommandSender sender) {
+        Player player = (Player) sender;
+        return ConfigManager.getAdmin().getConfig().getString(player.getUniqueId().toString() + ".admin").equalsIgnoreCase("super admin");
+    }
+    
     public static boolean isTelnetAdmin(CommandSender sender) {
         Player player = (Player) sender;
-        return ConfigManager.getAdmin().getConfig().getBoolean(player.getUniqueId().toString() + ".telnet");
+        return ConfigManager.getAdmin().getConfig().getString(player.getUniqueId().toString() + ".admin").equalsIgnoreCase("telnet admin");
     }
     
     public static boolean isSeniorAdmin(CommandSender sender) {
         Player player = (Player) sender;
-        return ConfigManager.getAdmin().getConfig().getBoolean(player.getUniqueId().toString() + ".senior");
+        return ConfigManager.getAdmin().getConfig().getString(player.getUniqueId().toString() + ".admin").equalsIgnoreCase("senior admin");
     } 
     
     public static Rank getRank(CommandSender sender) {
@@ -47,26 +52,19 @@ public class RankManager {
             return Rank.CONSOLE;
         }
         
-        if (isSuperAdmin((Player) sender)) {
+        final Player player = (Player) sender;
+        
+        if (isSuperAdmin(player)) {
             return Rank.SA;
         }
         
-        if (isTelnetAdmin((Player) sender)) {
+        if (isTelnetAdmin(player)) {
             return Rank.STA;
         }
         
-        if (isSeniorAdmin((Player) sender)) {
+        if (isSeniorAdmin(player)) {
             return Rank.SRA;
         }
         return Rank.OP;
-    }
-    
-    public static void addRank(Player player) {
-        ConfigManager.getAdmin().getConfig().set(player.getUniqueId().toString() + ".name", player.getName());
-        ConfigManager.getAdmin().getConfig().set(player.getUniqueId().toString() + ".ip", player.getAddress().getHostString());
-        ConfigManager.getAdmin().getConfig().set(player.getUniqueId().toString() + ".telnet", false);
-        ConfigManager.getAdmin().getConfig().set(player.getUniqueId().toString() + ".senior", false);
-        ConfigManager.getAdmin().getConfig().set(player.getUniqueId().toString() + ".tag", "");
-        ConfigManager.getAdmin().saveConfig();
     }
 }
