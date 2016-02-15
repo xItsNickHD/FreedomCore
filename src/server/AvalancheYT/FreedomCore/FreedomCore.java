@@ -4,6 +4,7 @@ import java.util.logging.Level;
 import org.bukkit.plugin.java.JavaPlugin;
 import server.AvalanceYT.FreedomCore.Commands.Command_fc;
 import server.AvalanceYT.FreedomCore.Commands.Command_list;
+import server.AvalanceYT.FreedomCore.Commands.Command_op;
 import server.AvalancheYT.FreedomCore.Config.ConfigManager;
 
 public class FreedomCore extends JavaPlugin {
@@ -29,5 +30,6 @@ public class FreedomCore extends JavaPlugin {
         new ConfigManager();
         this.getCommand("list").setExecutor(new Command_list(this));
         this.getCommand("fc").setExecutor(new Command_fc(this));
+        this.getCommand("op").setExecutor(new Command_op(this));
     }
 }
