@@ -1,4 +1,7 @@
 # FreedomCore's admins configuration
 
-admins:
-    
+d8df27df-479e-3ea4-8360-ac23a95b26a8:
+  name: AvalancheYT
+  ip: 127.0.0.1
+  admin: senior admin
+  tag: ''

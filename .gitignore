@@ -58,3 +58,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.class
+build/classes/server/AvalancheYT/FreedomCore/Commands/Command_list.class

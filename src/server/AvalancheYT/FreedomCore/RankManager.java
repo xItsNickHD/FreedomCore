@@ -8,7 +8,7 @@ import server.AvalancheYT.FreedomCore.Config.ConfigManager;
 public class RankManager {
     
     public enum Rank {
-        OP("Op", ChatColor.RED + "[OP]"), SA("Super Admin", ChatColor.GOLD + "[SA]"), STA("Super Telnet Admin", ChatColor.DARK_GREEN + "[STA]"), SRA("Senior Admin", ChatColor.LIGHT_PURPLE + "[SrA]"), CONSOLE("Console", ChatColor.DARK_AQUA + "[Console]");
+        NON("Non-Op", ChatColor.YELLOW + ""), OP("Op", ChatColor.RED + "[OP]"), SA("Super Admin", ChatColor.GOLD + "[SA]"), STA("Super Telnet Admin", ChatColor.DARK_GREEN + "[STA]"), SRA("Senior Admin", ChatColor.LIGHT_PURPLE + "[SrA]"), CONSOLE("Console", ChatColor.DARK_AQUA + "[Console]");
         
         private final String name;
         private final String prefix;
@@ -65,6 +65,10 @@ public class RankManager {
         if (isSeniorAdmin(player)) {
             return Rank.SRA;
         }
-        return Rank.OP;
+        
+        if (player.isOp()) {
+            return Rank.OP;
+        }
+        return Rank.NON;
     }
 }

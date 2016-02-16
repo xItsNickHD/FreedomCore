@@ -18,16 +18,20 @@ public class Command_op implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
-        final Player player = Bukkit.getPlayer(args[0]);
-
+        if (args.length != 1) {
+            return false;
+        }
+        
+        Player player = Bukkit.getPlayer(args[0]);
         if (player == null) {
-            sender.sendMessage(ChatColor.GRAY + "Player not found");
+            sender.sendMessage(ChatColor.RED + "Player: " + args[0] + " is invalid");
             return true;
         }
-        Bukkit.broadcastMessage(ChatColor.AQUA + sender.getName() + " - Opping " + player.getName());
+        
+        Bukkit.broadcastMessage(ChatColor.GREEN + sender.getName() + " - Opping " + player.getName());
+        player.sendMessage(ChatColor.GOLD + "You have been opped by: " + sender.getName());
         player.setOp(true);
         return true;
-
     }
 
 }
