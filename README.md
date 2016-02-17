@@ -2,9 +2,9 @@
 FreedomCore is spigot plugin, giving us free-op. The basic idea is from [TotalFreedomMod](https://github.com/TotalFreedom/TotalFreedomMod) but used differently to use our knowledge.
 
 ## Developers
-- AvalancheYT [Creator / ChickenFreedom Co-Lead Developer]
-- ThePheonixBlader (TaahThePheonix) [ChickenFreedom Lead Developer] 
-- PacksGamingHD [Developer]
+- [AvalancheYT](https://github.com/AvalancheYT) [Creator / ChickenFreedom Co-Lead Developer]
+- [ThePheonixBlader](https://github.com/ThePheonixBlader) (TaahThePheonix) [ChickenFreedom Lead Developer] 
+- [PacksGamingHD](https://github.com/PacksGamingHD) [Developer]
 
 ## Contributing to FreedomCore
 If you see issues that is doesn't have resolved tag next to it, but it got enchantment? Feel free to make a PR<br>
