@@ -1,11 +1,14 @@
 package server.AvalancheYT.FreedomCore;
 
+import java.util.ArrayList;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import server.AvalancheYT.FreedomCore.Config.ConfigManager;
 
 public class RankManager {
+    
+    public static final ArrayList<String> impostors = new ArrayList<>();
     
     public enum Rank {
         NON("Non-Op", ChatColor.YELLOW + ""), OP("Op", ChatColor.RED + "[OP]"), SA("Super Admin", ChatColor.GOLD + "[SA]"), STA("Super Telnet Admin", ChatColor.DARK_GREEN + "[STA]"), SRA("Senior Admin", ChatColor.LIGHT_PURPLE + "[SrA]"), CONSOLE("Console", ChatColor.DARK_AQUA + "[Console]");

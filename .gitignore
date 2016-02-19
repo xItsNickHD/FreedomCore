@@ -60,3 +60,6 @@ $RECYCLE.BIN/
 *.lnk
 *.class
 build/classes/server/AvalancheYT/FreedomCore/Commands/Command_list.class
+/nbproject/private/
+/build/
+/dist/

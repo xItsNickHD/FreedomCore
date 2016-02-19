@@ -28,6 +28,11 @@ public class Command_op implements CommandExecutor {
             return true;
         }
         
+        if (player.isOp()) {
+            sender.sendMessage(ChatColor.RED + player.getName() + " is already opped");
+            return true;
+        }
+        
         Bukkit.broadcastMessage(ChatColor.GREEN + sender.getName() + " - Opping " + player.getName());
         player.sendMessage(ChatColor.GOLD + "You have been opped by: " + sender.getName());
         player.setOp(true);

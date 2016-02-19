@@ -1,12 +1,12 @@
-# FreedomHostingMod's Main Configuration
+# FreedomCore's Main Configuration
 # Created by AvalancheYT and TaahThePhoenix
 
 server:
     # Your server name?
-    name: FreedomHostingMod
+    name: FreedomCore
     
     # Forum (Ban appeal, admin application and others)
     forum: http://example.net/forum
     
     # Server list MOTD (Use & for color)
-    motd: "&e&k::: &b&lFreedomCore Example &e&l:::"
+    motd: "&e&k::: &b&lFreedomCore &e&k:::"
