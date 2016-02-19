@@ -4,7 +4,7 @@ FreedomCore is spigot plugin, giving us free-op. The basic idea is from [TotalFr
 ## Developers
 - [AvalancheYT](https://github.com/AvalancheYT) [Creator / ChickenFreedom Co-Lead Developer]
 - [ThePheonixBlader](https://github.com/ThePheonixBlader) (TaahThePheonix) [ChickenFreedom Lead Developer] 
-- [Adaptified](https://github.com/MrImmaculate) [Developer]
+- [Adaptified](https://github.com/Adaptified) [Developer]
 
 ## Contributing to FreedomCore
 If you see issues that is doesn't have resolved tag next to it, but it got enchantment? Feel free to make a PR<br>
