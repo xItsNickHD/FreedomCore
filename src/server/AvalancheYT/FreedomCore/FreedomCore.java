@@ -7,6 +7,7 @@ import server.AvalancheYT.FreedomCore.Commands.Command_fc;
 import server.AvalancheYT.FreedomCore.Commands.Command_list;
 import server.AvalancheYT.FreedomCore.Commands.Command_op;
 import server.AvalancheYT.FreedomCore.Config.ConfigManager;
+import server.AvalancheYT.FreedomCore.Listeners.PlayerListener;
 
 public class FreedomCore extends JavaPlugin {
     public static FreedomCore plugin;
@@ -20,6 +21,7 @@ public class FreedomCore extends JavaPlugin {
     public void onEnable() {
         this.register();
         getLogger().log(Level.INFO, "FreedomCore enabled! Created by AvalancheYT and TaahThePhoenix");
+        new PlayerListener(this);
     }
     
     @Override
@@ -29,6 +31,7 @@ public class FreedomCore extends JavaPlugin {
     
     public void register() {
         new ConfigManager();
+        new PlayerListener(this);
         this.getCommand("list").setExecutor(new Command_list(this));
         this.getCommand("fc").setExecutor(new Command_fc(this));
         this.getCommand("admin").setExecutor(new Command_admin(this));
